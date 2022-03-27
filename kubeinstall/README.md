@@ -1,4 +1,4 @@
-# Kubernetes Cluster Deployer and Withdrawer
+# Kubernetes Cluster Deployer and Withdrawer Manually turn off swap in /etc/fstab (put '#' before the line)
 
 Based on the previous works of szefoka/openfaas_lab and danielkeszei/thesis_scripts.
  
