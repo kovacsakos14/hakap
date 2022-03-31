@@ -42,7 +42,11 @@ apt-mark hold kubelet kubeadm kubectl
 # kubeadm init --pod-network-cidr 10.244.0.0/16  --apiserver-advertise-address 192.168.0.
 # export KUBECONFIG=/etc/kubernetes/admin.conf
 # kubectl apply -f  https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-# kubectl config set-context --current --namespace=hakap
+#Ha fusson pod a masteren is
+# kubectl taint nodes --all node-role.kubernetes.io/master-
+
+#### kubectl config set-context --current --namespace=hakap
+
 
 #Új token:
 # TOKEN=$(kubeadm token generate)
