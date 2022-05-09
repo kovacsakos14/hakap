@@ -49,7 +49,7 @@ then
 	chmod 666 /etc/apt/sources.list.d/kubernetes.list
 	echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 	apt-get update
-	apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+	apt-get install -qy kubelet=1.23.6-00 kubeadm=1.23.6-00 kubectl=1.23.6-00 kubernetes-cni
 fi
 
 #Disabling swap for Kubernetes
